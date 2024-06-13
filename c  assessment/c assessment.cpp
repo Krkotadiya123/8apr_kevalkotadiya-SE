@@ -162,8 +162,8 @@ main() {
                 printf("Invalid option\n");
         
     }  
-	 printf("Do you want to continue? (y/n): ");
-        scanf(" %c", &a);
+	 printf("Do you want to continue? (9): ");
+        scanf(" %d", &a);
 }
 }
 
