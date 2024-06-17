@@ -100,7 +100,7 @@ void digit and space(char a[]) {
     
   }
   
-  printf("\nDigits: %d", digit);
+  printf("\ndigits: %d", digit);
   printf("\nspaces: %d", space);
   printf("\n");
 
@@ -144,7 +144,7 @@ main() {
             break;
         case 4:
             copyString(b, a);
-            printf("Original: %s\nCopied: %s\n", a, b);
+            printf("Original: %s\ncopy: %s\n", a, b);
             break;
         case 5:
             printf("Length: %d\n", stringLength(a));
@@ -153,16 +153,17 @@ main() {
             frequencyOfCharacters(a);
             break;
         case 7:
-            VowelsAndConsonants(a);
+           vowels and consonants (a);
             break;
         case 8:
-            DigitsAndSpaces(a);
+           digit and space(a);
             break;
              default:
-                printf("Invalid option\n");
+               
+	    printf("invalid optoion\n");
         
     }  
-	 printf("Do you want to continue? (9): ");
+	 printf("do you want to continue? (9): ");
         scanf(" %d", &a);
 }
 }
