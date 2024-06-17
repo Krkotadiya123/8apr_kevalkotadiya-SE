@@ -65,7 +65,7 @@ void frequencyOfCharacters(char a[]) {
 					}
 				}
 
-void VowelsAndConsonants(char a[]) 
+void vowels and consonants(char a[]) 
 {
 	//vowels and consonants
 	int i;
@@ -79,10 +79,10 @@ void VowelsAndConsonants(char a[])
             consonants++;
         }
     	}
-    printf("Vowels: %d\nConsonants: %d\n", vowels, consonants);
+    printf("vowels: %d\nconsonants: %d\n", vowels, consonants);
 }
 
-void DigitsAndSpaces(char a[]) {
+void digit and space(char a[]) {
 	//digit and space
     int digit,i; 
 	int space= 0;
