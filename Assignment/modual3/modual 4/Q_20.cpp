@@ -4,23 +4,25 @@
 using namespace std;
 main()
 {
-	ofstream myfile(".txt");
-	int n,even,odd,i,nm;
-	cout<<"enter number:";
-	cin>>n;
-	for(i=0;i<n;i++){
-		cout<<"\nenter number:";
-		cin>>nm;
+	ifstream myfile("intcount.txt");
+	ofstream evenfile("even.txt");
+	ofstream oddfile("odd.txt");
+	
+	int n;
+	
+	while(myfile>>n){
+	   
 		
-		if(nm%2==0){
-			cout<<"\nodd number:";
+		if(n%2==0){
+	  evenfile<<n<"\n";
 			
 		}
 		else{
-			cout<<"\neven number:";
+			oddfile<<n<<"\n";
 		}
 		
 	}
-	
+	cout<<"even number"<<"\n";
+	cout<<"oddnumber"<<"\n";
 	
 }
