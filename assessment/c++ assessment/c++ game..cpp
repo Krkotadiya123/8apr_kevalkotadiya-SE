@@ -6,7 +6,7 @@ using namespace std;
 class sprgame{
 	
 	public:
-	string playername;
+     string playername;
     int totalrounds;
     int playerscore;
     int computerscore;
@@ -23,7 +23,7 @@ class sprgame{
     	
         cout<<"*__*__*__*__*__*__*__*__*__*__*__*__*__*"<<"\n";
         cout<<"                 nane"<<"\n";
-          cout<<"*__*__*__*__*__*__*__*__*__*__*__*__*__*"<<"\n";
+        cout<<"*__*__*__*__*__*__*__*__*__*__*__*__*__*"<<"\n";
         
         cout<<"Enter Your Name: ";
         cin>>playername;
@@ -35,7 +35,7 @@ class sprgame{
     	
         cout<<"*__*__*__*__*__*__*__*__*__*__*__*__*__*"<<"\n";
         cout<<"                 round"<<"\n";
-  		cout<<"*__*__*__*__*__*__*__*__*__*__*__*__*__*"<<"\n";
+  	cout<<"*__*__*__*__*__*__*__*__*__*__*__*__*__*"<<"\n";
         
         cout<<playername<<"total rounds : ";
         cin>>totalrounds;
@@ -51,7 +51,7 @@ class sprgame{
             
             cout<<"\nround No: "<<round<<"/"<<totalrounds<<endl;
             cout<<"* "<<playername<<"score: "<<playerscore<<endl;
-            cout<<"* computer score: "<<computerscore<<endl;
+            cout<<"computer score: "<<computerscore<<endl;
 
             int playerchoice = getplayerchoice();
             int computerchoice = getcomputerchoice();
@@ -69,7 +69,7 @@ class sprgame{
         
         cout<<"\n1. Rock"<<"\n";
         cout<<"2. Paper"<<"\n";
-        cout<<"3. Scissors"<<"\n";
+        cout<<"3. scissors"<<"\n";
         
         do{	cout<<"\nSelect your choice: ";
             cin>>choice;
@@ -104,7 +104,7 @@ class sprgame{
 			break;
         }
         
-        cout<<"Computer chose: ";
+        cout<<"computer chose: ";
         switch (computerchoice){
             case 1:
 			cout<<"Rock"<<endl;
@@ -131,7 +131,7 @@ class sprgame{
             cout<<"\nIt's a draw!"<<endl;
         }
 		else{
-            cout<<"\nComputer wins this round!"<<endl;
+            cout<<"\ncomputer wins this round!"<<endl;
             computerscore++;
         }
     }
@@ -141,8 +141,8 @@ class sprgame{
     void displayresult(){
     	
        cout<<"*__*__*__*__*__*__*__*__*__*__*__*__*__*"<<"\n";
-        cout<<"                final score "<<"\n";
-          cout<<"*__*__*__*__*__*__*__*__*__*__*__*__*__*"<<"\n";
+       cout<<"                final score "<<"\n";
+       cout<<"*__*__*__*__*__*__*__*__*__*__*__*__*__*"<<"\n";
         
         cout<<playername<<"score: "<<playerscore<<endl;
         cout<<"Computer score: "<<computerscore<<endl;
